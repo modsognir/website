@@ -1,0 +1,153 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "blueprint";
+@import "blueprint/typography";
+@import "blueprint/interaction";
+
+$strong: #000;
+$normal: #333;
+$weak: #888;
+
+body {
+	font-family: 'Helvetica Neue', 'Arial';
+	
+	section, article, header { display: block; }
+	
+	header {
+		background: #333;
+		height: 39px;
+		h1 {
+			color: #eee;
+			font-size: 26px;
+			font-weight: bold;
+			padding: 6px;
+			padding-left: 16px;
+			float: left;
+			a { color: #eee; text-decoration: none; }
+		}
+		ul {
+			float: right;
+			margin-top: 10px;
+			li {
+				display: inline;
+				a {
+					text-decoration: none;
+					color: #eee;
+					padding: 0px 20px;
+					margin: 0;
+					border-left: 1px solid #444;
+					border-right: 1px solid #444;					
+				}
+			}
+			li:last-child a {	border-right: none;	}
+			li:first-child a { border-left: none; }
+		}
+	}
+	
+	nav#social_media {
+		float: right;
+		margin: 3px;
+	}
+	
+	section#content {
+		@include container;
+		
+		header {
+			background: none;
+		}
+		
+		article {
+			@include column(24);
+			margin: 20px 0 20px 0;
+			line-height: 22px;
+			
+			header {
+				margin: 0 0 10px 0;
+				padding-bottom: 10px;
+				border-bottom: 2px solid #ddd;
+				height: auto;
+				h2 {
+					font-size: 21px;
+					a { color: $strong; text-decoration: none; }
+					a:hover { color: $normal;}
+				}
+				
+			}
+			header.post {
+				@include column(23.5);
+				h2 { @include prepend(4.5); } 
+			}
+			h3 {
+				margin: 14px 0px;
+				font-weight: bold;
+				font-size: 14px;
+				color: $normal;
+			}
+			section.article_body {
+				@include column(19);
+				color: $normal;
+				font-size: 13px;
+				p { margin-bottom: 12px; }
+				blockquote {
+					display: inline-block;
+					border-left: 7px solid #DCEEEE;
+					padding-left: 1em;
+					margin: 1em;
+				}
+				ul {
+					list-style: disc;
+					margin: 10px 0 10px 0;
+					li {
+						margin-left: 30px;
+					}
+				}
+				a { color: $normal;}
+			}
+			dl {
+				@include column(4);
+				font-size: 11px;
+				margin-right: 30px;
+				
+				dt { font-weight: bold; color: $normal + #333; float: left; clear: both; width: 70px;}
+				dd { color: $weak; padding-left: 10px; float: left;}
+				ul {
+					li {
+						a { text-decoration: none; color: $weak; }
+						a:hover { text-decoration: underline; color: $strong; }
+					}
+				}
+			}
+		}
+		article.about {
+			margin-bottom: 0;
+			header {
+				@include push(3);
+				@include column(18);
+				margin-bottom: 10px;
+			}
+			section {
+				@include push(3);
+				@include prepend(1);
+				@include column(16);
+
+				font-size: 13px;
+				color: $normal;
+				p { margin-top: 10px; }
+			}
+		}
+	}
+}
+
+/* DISCUS */
+
+div#disqus_thread {
+	#dsq-content {
+		.dsq-options {
+			display: none;
+		}
+	}
+}

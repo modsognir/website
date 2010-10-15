@@ -1,0 +1,22 @@
+%section#articles
+  - @articles.each do |article|
+    %article
+      %header.post
+        %h2= link_to article.title, article_path(article)
+      %aside
+        %dl
+          %dt Posted
+          %dd= article.created_at
+          %dt Author
+          %dd modsognir
+          %dt Tags
+          %dd todo
+          %dt Comments
+          %dd 
+            15
+            %ul
+              %li= link_to "post comment", article_path(article) + "#disqus_thread"
+      %section.article_body
+        = article.content.html_safe
+%br/
+= link_to 'New Article', new_article_path

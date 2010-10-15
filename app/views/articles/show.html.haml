@@ -1,0 +1,26 @@
+%article
+  %header.post
+    %h2= @article.title
+  %aside
+    %dl
+      %dt Posted
+      %dd= @article.created_at
+      %dt Author
+      %dd modsognir
+      %dt Tags
+      %dd todo
+      %dt Comments
+      %dd 15
+  %section.article_body
+    = @article.content.html_safe
+    %div#disqus_thread
+    %script{:type=>"text/javascript"}
+      var disqus_developer = 1;
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://modsognir.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    %noscript
+      Please enable JavaScript to view the
+      %a{:href => "http://disqus.com/?ref_noscript=modsognir"} comments powered by Disqus.
