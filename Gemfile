@@ -13,7 +13,6 @@ gem "compass"
 gem "hpricot"
 gem "ruby_parser"
 
-gem "redcloth"
 # Use unicorn as the web server
 # gem 'unicorn'
 
