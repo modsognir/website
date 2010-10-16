@@ -15,3 +15,8 @@
           %dd= link_to "post comment", article_path(article) + "#disqus_thread"
       %section.article_body
         = article.content.html_safe
+  - unless @articles.present?
+    %article
+      %h1 Under Construction
+      %section
+        %p The old version was an utter mess. I am currently updating this server with a brand new design. Thanks for coming anyway, you can check in a few hours later, or yell at me on #{link_to 'twitter', "http://twitter.com/modsognir"}.
