@@ -12,6 +12,9 @@ $strong: #000;
 $normal: #333;
 $weak: #888;
 
+$link: #06C;
+$link-hover: #F00;
+
 body {
 	font-family: 'Helvetica Neue', 'Arial';
 	
@@ -105,7 +108,8 @@ body {
 						margin-left: 30px;
 					}
 				}
-				a { color: $normal;}
+				a { color: $link;}
+				a:hover { color: $link_hover; }
 			}
 			dl {
 				@include column(4);
