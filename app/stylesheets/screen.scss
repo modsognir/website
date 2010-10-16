@@ -129,7 +129,7 @@ body {
 				a:hover { text-decoration: underline; color: $strong; }
 			}
 		}
-		article.about {
+		article.about, article.contact {
 			margin-bottom: 0;
 			header {
 				@include push(3);
@@ -144,6 +144,14 @@ body {
 				font-size: 13px;
 				color: $normal;
 				p { margin-top: 10px; }
+			}
+			dl {
+				font-size: 13px;
+				@include column(16);
+				dt { color: $normal; }
+				dd { }
+				a { text-decoration: none; color: $normal + #222; }
+				a:hover { text-decoration: underline; color: $strong; }
 			}
 		}
 	}

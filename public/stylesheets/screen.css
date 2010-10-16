@@ -303,11 +303,11 @@ body section#content article dl a:hover {
   color: black;
 }
 /* line 132, ../../app/stylesheets/screen.scss */
-body section#content article.about {
+body section#content article.about, body section#content article.contact {
   margin-bottom: 0;
 }
 /* line 134, ../../app/stylesheets/screen.scss */
-body section#content article.about header {
+body section#content article.about header, body section#content article.contact header {
   display: inline;
   float: right;
   position: relative;
@@ -319,11 +319,11 @@ body section#content article.about header {
   margin-bottom: 10px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body section#content article.about header {
+* html body section#content article.about header, * html body section#content article.contact header {
   overflow-x: hidden;
 }
 /* line 139, ../../app/stylesheets/screen.scss */
-body section#content article.about section {
+body section#content article.about section, body section#content article.contact section {
   display: inline;
   float: right;
   position: relative;
@@ -337,16 +337,42 @@ body section#content article.about section {
   color: #333333;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html body section#content article.about section {
+* html body section#content article.about section, * html body section#content article.contact section {
   overflow-x: hidden;
 }
 /* line 146, ../../app/stylesheets/screen.scss */
-body section#content article.about section p {
+body section#content article.about section p, body section#content article.contact section p {
   margin-top: 10px;
+}
+/* line 148, ../../app/stylesheets/screen.scss */
+body section#content article.about dl, body section#content article.contact dl {
+  font-size: 13px;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 630px;
+}
+/* line 139, ../../../../.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html body section#content article.about dl, * html body section#content article.contact dl {
+  overflow-x: hidden;
+}
+/* line 151, ../../app/stylesheets/screen.scss */
+body section#content article.about dl dt, body section#content article.contact dl dt {
+  color: #333333;
+}
+/* line 153, ../../app/stylesheets/screen.scss */
+body section#content article.about dl a, body section#content article.contact dl a {
+  text-decoration: none;
+  color: #555555;
+}
+/* line 154, ../../app/stylesheets/screen.scss */
+body section#content article.about dl a:hover, body section#content article.contact dl a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 /* DISCUS */
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 164, ../../app/stylesheets/screen.scss */
 div#disqus_thread #dsq-content .dsq-options {
   display: none;
 }
