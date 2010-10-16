@@ -12,8 +12,6 @@
           %dt Tags
           %dd todo
           %dt Comments
-          %dd 
-            %ul
-              %li= link_to "post comment", article_path(article) + "#disqus_thread"
+          %dd= link_to "post comment", article_path(article) + "#disqus_thread"
       %section.article_body
         = article.content.html_safe

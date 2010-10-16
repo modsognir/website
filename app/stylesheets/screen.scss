@@ -7,6 +7,7 @@
 @import "blueprint";
 @import "blueprint/typography";
 @import "blueprint/interaction";
+@import "blueprint/grid";
 
 $strong: #000;
 $normal: #333;
@@ -19,6 +20,9 @@ body {
 	font-family: 'Helvetica Neue', 'Arial';
 	
 	section, article, header { display: block; }
+	
+	.alert { @include error; margin-top: 10px; }
+	.notice { @include success; margin-top: 10px; }
 	
 	header {
 		background: #333;
@@ -59,6 +63,16 @@ body {
 	section#content {
 		@include container;
 		
+		color: $normal;
+		font-size: 13px;
+		
+		h1 { font-size: 26px; margin: 15px 0; }
+		h2 {
+			font-size: 21px;
+			a { color: $strong; text-decoration: none; }
+			a:hover { color: $normal;}
+		}
+		
 		header {
 			background: none;
 		}
@@ -68,18 +82,12 @@ body {
 			margin: 20px 0 20px 0;
 			line-height: 22px;
 
-			h1 { font-size: 36px;  margin-bottom: 20px;}
+			h1 { font-size: 30px;  margin-bottom: 20px;}
 			header {
 				margin: 0 0 10px 0;
 				padding-bottom: 10px;
 				border-bottom: 2px solid #ddd;
-				height: auto;
-				h2 {
-					font-size: 21px;
-					a { color: $strong; text-decoration: none; }
-					a:hover { color: $normal;}
-				}
-				
+				height: auto;			
 			}
 			header.post {
 				@include column(23.5);
@@ -93,8 +101,6 @@ body {
 			}
 			section.article_body {
 				@include column(19);
-				color: $normal;
-				font-size: 13px;
 				p { margin-bottom: 12px; }
 				blockquote {
 					display: inline-block;
@@ -119,12 +125,8 @@ body {
 				
 				dt { font-weight: bold; color: $normal + #333; float: left; clear: both; width: 70px;}
 				dd { color: $weak; padding-left: 10px; float: left;}
-				ul {
-					li {
-						a { text-decoration: none; color: $weak; }
-						a:hover { text-decoration: underline; color: $strong; }
-					}
-				}
+				a { text-decoration: none; color: $weak; }
+				a:hover { text-decoration: underline; color: $strong; }
 			}
 		}
 		article.about {

@@ -1,5 +1,7 @@
 Modsognir::Application.routes.draw do
-  # resources :articles
+  devise_for :users
+
+  resources :articles
   # 
   match '/about' => "site#about", :as => "about"
   match '/contact' => "site#contact", :as => "contact"
@@ -50,8 +52,6 @@ Modsognir::Application.routes.draw do
   #     resources :products
   #   end
   
-  match ':anything' => "site#index" 
-  match 'articles' => "site#index", :as => "articles"
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "articles#index"

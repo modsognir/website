@@ -29,4 +29,20 @@
           %li= link_to 'contact', contact_path
       
     %section#content
+      - if notice
+        %p.notice= notice
+      - if alert
+        %p.alert= alert
+      - if flash[:success]
+        %p.success= flash[:success]
+    
       = yield
+    :javascript
+      var disqus_shortname = 'modsognir';
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.src = 'http://disqus.com/forums/modsognir/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+  
+

@@ -62,20 +62,48 @@ a img {
   border: none;
 }
 
-/* line 18, ../../app/stylesheets/screen.scss */
+/* line 19, ../../app/stylesheets/screen.scss */
 body {
   font-family: 'Helvetica Neue', 'Arial';
 }
-/* line 21, ../../app/stylesheets/screen.scss */
+/* line 22, ../../app/stylesheets/screen.scss */
 body section, body article, body header {
   display: block;
 }
-/* line 23, ../../app/stylesheets/screen.scss */
+/* line 24, ../../app/stylesheets/screen.scss */
+body .alert {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #fbe3e4;
+  color: #8a1f11;
+  border-color: #fbc2c4;
+  margin-top: 10px;
+}
+/* line 29, ../../../../.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .alert a {
+  color: #8a1f11;
+}
+/* line 25, ../../app/stylesheets/screen.scss */
+body .notice {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 2px solid #dddddd;
+  background: #e6efc2;
+  color: #264409;
+  border-color: #c6d880;
+  margin-top: 10px;
+}
+/* line 45, ../../../../.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+body .notice a {
+  color: #264409;
+}
+/* line 27, ../../app/stylesheets/screen.scss */
 body header {
   background: #333;
   height: 39px;
 }
-/* line 26, ../../app/stylesheets/screen.scss */
+/* line 30, ../../app/stylesheets/screen.scss */
 body header h1 {
   color: #eee;
   font-size: 26px;
@@ -84,21 +112,21 @@ body header h1 {
   padding-left: 16px;
   float: left;
 }
-/* line 33, ../../app/stylesheets/screen.scss */
+/* line 37, ../../app/stylesheets/screen.scss */
 body header h1 a {
   color: #eee;
   text-decoration: none;
 }
-/* line 35, ../../app/stylesheets/screen.scss */
+/* line 39, ../../app/stylesheets/screen.scss */
 body header ul {
   float: right;
   margin-top: 10px;
 }
-/* line 38, ../../app/stylesheets/screen.scss */
+/* line 42, ../../app/stylesheets/screen.scss */
 body header ul li {
   display: inline;
 }
-/* line 40, ../../app/stylesheets/screen.scss */
+/* line 44, ../../app/stylesheets/screen.scss */
 body header ul li a {
   text-decoration: none;
   color: #eee;
@@ -107,31 +135,51 @@ body header ul li a {
   border-left: 1px solid #444;
   border-right: 1px solid #444;
 }
-/* line 49, ../../app/stylesheets/screen.scss */
+/* line 53, ../../app/stylesheets/screen.scss */
 body header ul li:last-child a {
   border-right: none;
 }
-/* line 50, ../../app/stylesheets/screen.scss */
+/* line 54, ../../app/stylesheets/screen.scss */
 body header ul li:first-child a {
   border-left: none;
 }
-/* line 54, ../../app/stylesheets/screen.scss */
+/* line 58, ../../app/stylesheets/screen.scss */
 body nav#social_media {
   float: right;
   margin: 3px;
 }
-/* line 59, ../../app/stylesheets/screen.scss */
+/* line 63, ../../app/stylesheets/screen.scss */
 body section#content {
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+  color: #333333;
+  font-size: 13px;
 }
-/* line 62, ../../app/stylesheets/screen.scss */
+/* line 69, ../../app/stylesheets/screen.scss */
+body section#content h1 {
+  font-size: 26px;
+  margin: 15px 0;
+}
+/* line 70, ../../app/stylesheets/screen.scss */
+body section#content h2 {
+  font-size: 21px;
+}
+/* line 72, ../../app/stylesheets/screen.scss */
+body section#content h2 a {
+  color: black;
+  text-decoration: none;
+}
+/* line 73, ../../app/stylesheets/screen.scss */
+body section#content h2 a:hover {
+  color: #333333;
+}
+/* line 76, ../../app/stylesheets/screen.scss */
 body section#content header {
   background: none;
 }
-/* line 66, ../../app/stylesheets/screen.scss */
+/* line 80, ../../app/stylesheets/screen.scss */
 body section#content article {
   display: inline;
   float: left;
@@ -144,32 +192,19 @@ body section#content article {
 * html body section#content article {
   overflow-x: hidden;
 }
-/* line 71, ../../app/stylesheets/screen.scss */
+/* line 85, ../../app/stylesheets/screen.scss */
 body section#content article h1 {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 20px;
 }
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 86, ../../app/stylesheets/screen.scss */
 body section#content article header {
   margin: 0 0 10px 0;
   padding-bottom: 10px;
   border-bottom: 2px solid #ddd;
   height: auto;
 }
-/* line 77, ../../app/stylesheets/screen.scss */
-body section#content article header h2 {
-  font-size: 21px;
-}
-/* line 79, ../../app/stylesheets/screen.scss */
-body section#content article header h2 a {
-  color: black;
-  text-decoration: none;
-}
-/* line 80, ../../app/stylesheets/screen.scss */
-body section#content article header h2 a:hover {
-  color: #333333;
-}
-/* line 84, ../../app/stylesheets/screen.scss */
+/* line 92, ../../app/stylesheets/screen.scss */
 body section#content article header.post {
   display: inline;
   float: left;
@@ -180,59 +215,57 @@ body section#content article header.post {
 * html body section#content article header.post {
   overflow-x: hidden;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 94, ../../app/stylesheets/screen.scss */
 body section#content article header.post h2 {
   padding-left: 180px;
 }
-/* line 88, ../../app/stylesheets/screen.scss */
+/* line 96, ../../app/stylesheets/screen.scss */
 body section#content article h3 {
   margin: 14px 0px;
   font-weight: bold;
   font-size: 14px;
   color: #333333;
 }
-/* line 94, ../../app/stylesheets/screen.scss */
+/* line 102, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body {
   display: inline;
   float: left;
   margin-right: 10px;
   width: 750px;
-  color: #333333;
-  font-size: 13px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.8.7-p248/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body section#content article section.article_body {
   overflow-x: hidden;
 }
-/* line 98, ../../app/stylesheets/screen.scss */
+/* line 104, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body p {
   margin-bottom: 12px;
 }
-/* line 99, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body blockquote {
   display: inline-block;
   border-left: 7px solid #DCEEEE;
   padding-left: 1em;
   margin: 1em;
 }
-/* line 105, ../../app/stylesheets/screen.scss */
+/* line 111, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body ul {
   list-style: disc;
   margin: 10px 0 10px 0;
 }
-/* line 108, ../../app/stylesheets/screen.scss */
+/* line 114, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body ul li {
   margin-left: 30px;
 }
-/* line 112, ../../app/stylesheets/screen.scss */
+/* line 118, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body a {
   color: #0066cc;
 }
-/* line 113, ../../app/stylesheets/screen.scss */
+/* line 119, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body a:hover {
   color: red;
 }
-/* line 115, ../../app/stylesheets/screen.scss */
+/* line 121, ../../app/stylesheets/screen.scss */
 body section#content article dl {
   display: inline;
   float: left;
@@ -245,7 +278,7 @@ body section#content article dl {
 * html body section#content article dl {
   overflow-x: hidden;
 }
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 126, ../../app/stylesheets/screen.scss */
 body section#content article dl dt {
   font-weight: bold;
   color: #666666;
@@ -253,27 +286,27 @@ body section#content article dl dt {
   clear: both;
   width: 70px;
 }
-/* line 121, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 body section#content article dl dd {
   color: #888888;
   padding-left: 10px;
   float: left;
 }
-/* line 124, ../../app/stylesheets/screen.scss */
-body section#content article dl ul li a {
+/* line 128, ../../app/stylesheets/screen.scss */
+body section#content article dl a {
   text-decoration: none;
   color: #888888;
 }
-/* line 125, ../../app/stylesheets/screen.scss */
-body section#content article dl ul li a:hover {
+/* line 129, ../../app/stylesheets/screen.scss */
+body section#content article dl a:hover {
   text-decoration: underline;
   color: black;
 }
-/* line 130, ../../app/stylesheets/screen.scss */
+/* line 132, ../../app/stylesheets/screen.scss */
 body section#content article.about {
   margin-bottom: 0;
 }
-/* line 132, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 body section#content article.about header {
   display: inline;
   float: right;
@@ -289,7 +322,7 @@ body section#content article.about header {
 * html body section#content article.about header {
   overflow-x: hidden;
 }
-/* line 137, ../../app/stylesheets/screen.scss */
+/* line 139, ../../app/stylesheets/screen.scss */
 body section#content article.about section {
   display: inline;
   float: right;
@@ -307,13 +340,13 @@ body section#content article.about section {
 * html body section#content article.about section {
   overflow-x: hidden;
 }
-/* line 144, ../../app/stylesheets/screen.scss */
+/* line 146, ../../app/stylesheets/screen.scss */
 body section#content article.about section p {
   margin-top: 10px;
 }
 
 /* DISCUS */
-/* line 154, ../../app/stylesheets/screen.scss */
+/* line 156, ../../app/stylesheets/screen.scss */
 div#disqus_thread #dsq-content .dsq-options {
   display: none;
 }
