@@ -257,15 +257,7 @@ body section#content article section.article_body ul {
 body section#content article section.article_body ul li {
   margin-left: 30px;
 }
-/* line 118, ../../app/stylesheets/screen.scss */
-body section#content article section.article_body a {
-  color: #0066cc;
-}
 /* line 119, ../../app/stylesheets/screen.scss */
-body section#content article section.article_body a:hover {
-  color: red;
-}
-/* line 121, ../../app/stylesheets/screen.scss */
 body section#content article dl {
   display: inline;
   float: left;
@@ -278,7 +270,7 @@ body section#content article dl {
 * html body section#content article dl {
   overflow-x: hidden;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 124, ../../app/stylesheets/screen.scss */
 body section#content article dl dt {
   font-weight: bold;
   color: #666666;
@@ -286,25 +278,35 @@ body section#content article dl dt {
   clear: both;
   width: 70px;
 }
-/* line 127, ../../app/stylesheets/screen.scss */
+/* line 125, ../../app/stylesheets/screen.scss */
 body section#content article dl dd {
   color: #888888;
   padding-left: 10px;
   float: left;
 }
-/* line 128, ../../app/stylesheets/screen.scss */
+/* line 126, ../../app/stylesheets/screen.scss */
 body section#content article dl a {
   text-decoration: none;
   color: #888888;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 body section#content article dl a:hover {
   text-decoration: underline;
   color: black;
 }
-/* line 132, ../../app/stylesheets/screen.scss */
+/* line 130, ../../app/stylesheets/screen.scss */
 body section#content article.about, body section#content article.contact {
   margin-bottom: 0;
+}
+/* line 132, ../../app/stylesheets/screen.scss */
+body section#content article.about a, body section#content article.contact a {
+  color: #0066cc;
+  text-decoration: none;
+}
+/* line 133, ../../app/stylesheets/screen.scss */
+body section#content article.about a:hover, body section#content article.contact a:hover {
+  color: red;
+  text-decoration: none;
 }
 /* line 134, ../../app/stylesheets/screen.scss */
 body section#content article.about header, body section#content article.contact header {

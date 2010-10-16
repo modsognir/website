@@ -115,8 +115,6 @@ body {
 						margin-left: 30px;
 					}
 				}
-				a { color: $link; text-decoration: none; }
-				a:hover { color: $link_hover; text-decoration: none; }
 			}
 			dl {
 				@include column(4);
@@ -131,6 +129,8 @@ body {
 		}
 		article.about, article.contact {
 			margin-bottom: 0;
+			a { color: $link; text-decoration: none; }
+			a:hover { color: $link_hover; text-decoration: none; }
 			header {
 				@include push(3);
 				@include column(18);
