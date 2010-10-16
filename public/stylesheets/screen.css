@@ -145,26 +145,31 @@ body section#content article {
   overflow-x: hidden;
 }
 /* line 71, ../../app/stylesheets/screen.scss */
+body section#content article h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+/* line 72, ../../app/stylesheets/screen.scss */
 body section#content article header {
   margin: 0 0 10px 0;
   padding-bottom: 10px;
   border-bottom: 2px solid #ddd;
   height: auto;
 }
-/* line 76, ../../app/stylesheets/screen.scss */
+/* line 77, ../../app/stylesheets/screen.scss */
 body section#content article header h2 {
   font-size: 21px;
 }
-/* line 78, ../../app/stylesheets/screen.scss */
+/* line 79, ../../app/stylesheets/screen.scss */
 body section#content article header h2 a {
   color: black;
   text-decoration: none;
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 80, ../../app/stylesheets/screen.scss */
 body section#content article header h2 a:hover {
   color: #333333;
 }
-/* line 83, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/stylesheets/screen.scss */
 body section#content article header.post {
   display: inline;
   float: left;
@@ -175,18 +180,18 @@ body section#content article header.post {
 * html body section#content article header.post {
   overflow-x: hidden;
 }
-/* line 85, ../../app/stylesheets/screen.scss */
+/* line 86, ../../app/stylesheets/screen.scss */
 body section#content article header.post h2 {
   padding-left: 180px;
 }
-/* line 87, ../../app/stylesheets/screen.scss */
+/* line 88, ../../app/stylesheets/screen.scss */
 body section#content article h3 {
   margin: 14px 0px;
   font-weight: bold;
   font-size: 14px;
   color: #333333;
 }
-/* line 93, ../../app/stylesheets/screen.scss */
+/* line 94, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body {
   display: inline;
   float: left;
@@ -199,35 +204,35 @@ body section#content article section.article_body {
 * html body section#content article section.article_body {
   overflow-x: hidden;
 }
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 98, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body p {
   margin-bottom: 12px;
 }
-/* line 98, ../../app/stylesheets/screen.scss */
+/* line 99, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body blockquote {
   display: inline-block;
   border-left: 7px solid #DCEEEE;
   padding-left: 1em;
   margin: 1em;
 }
-/* line 104, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body ul {
   list-style: disc;
   margin: 10px 0 10px 0;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 108, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body ul li {
   margin-left: 30px;
 }
-/* line 111, ../../app/stylesheets/screen.scss */
+/* line 112, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body a {
   color: #0066cc;
 }
-/* line 112, ../../app/stylesheets/screen.scss */
+/* line 113, ../../app/stylesheets/screen.scss */
 body section#content article section.article_body a:hover {
   color: red;
 }
-/* line 114, ../../app/stylesheets/screen.scss */
+/* line 115, ../../app/stylesheets/screen.scss */
 body section#content article dl {
   display: inline;
   float: left;
@@ -240,7 +245,7 @@ body section#content article dl {
 * html body section#content article dl {
   overflow-x: hidden;
 }
-/* line 119, ../../app/stylesheets/screen.scss */
+/* line 120, ../../app/stylesheets/screen.scss */
 body section#content article dl dt {
   font-weight: bold;
   color: #666666;
@@ -248,27 +253,27 @@ body section#content article dl dt {
   clear: both;
   width: 70px;
 }
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 121, ../../app/stylesheets/screen.scss */
 body section#content article dl dd {
   color: #888888;
   padding-left: 10px;
   float: left;
 }
-/* line 123, ../../app/stylesheets/screen.scss */
+/* line 124, ../../app/stylesheets/screen.scss */
 body section#content article dl ul li a {
   text-decoration: none;
   color: #888888;
 }
-/* line 124, ../../app/stylesheets/screen.scss */
+/* line 125, ../../app/stylesheets/screen.scss */
 body section#content article dl ul li a:hover {
   text-decoration: underline;
   color: black;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 130, ../../app/stylesheets/screen.scss */
 body section#content article.about {
   margin-bottom: 0;
 }
-/* line 131, ../../app/stylesheets/screen.scss */
+/* line 132, ../../app/stylesheets/screen.scss */
 body section#content article.about header {
   display: inline;
   float: right;
@@ -284,7 +289,7 @@ body section#content article.about header {
 * html body section#content article.about header {
   overflow-x: hidden;
 }
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 137, ../../app/stylesheets/screen.scss */
 body section#content article.about section {
   display: inline;
   float: right;
@@ -302,13 +307,13 @@ body section#content article.about section {
 * html body section#content article.about section {
   overflow-x: hidden;
 }
-/* line 143, ../../app/stylesheets/screen.scss */
+/* line 144, ../../app/stylesheets/screen.scss */
 body section#content article.about section p {
   margin-top: 10px;
 }
 
 /* DISCUS */
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 154, ../../app/stylesheets/screen.scss */
 div#disqus_thread #dsq-content .dsq-options {
   display: none;
 }

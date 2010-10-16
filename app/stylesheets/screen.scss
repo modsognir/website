@@ -67,7 +67,8 @@ body {
 			@include column(24);
 			margin: 20px 0 20px 0;
 			line-height: 22px;
-			
+
+			h1 { font-size: 36px;  margin-bottom: 20px;}
 			header {
 				margin: 0 0 10px 0;
 				padding-bottom: 10px;
