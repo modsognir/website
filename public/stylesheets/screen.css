@@ -344,7 +344,7 @@ body section#content article.about section, body section#content article.contact
 }
 /* line 146, ../../app/stylesheets/screen.scss */
 body section#content article.about section p, body section#content article.contact section p {
-  margin-top: 10px;
+  margin: 5px 0px;
 }
 /* line 148, ../../app/stylesheets/screen.scss */
 body section#content article.about dl, body section#content article.contact dl {

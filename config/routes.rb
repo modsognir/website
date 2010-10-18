@@ -2,6 +2,7 @@ Modsognir::Application.routes.draw do
   devise_for :users
 
   resources :articles
+  resources :invoices
   # 
   match '/about' => "site#about", :as => "about"
   match '/contact' => "site#contact", :as => "contact"
