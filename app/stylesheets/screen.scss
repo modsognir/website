@@ -154,6 +154,18 @@ body {
 				a:hover { text-decoration: underline; color: $strong; }
 			}
 		}
+		article.invoice {
+			table {
+				tr { 
+/*					border-collapse:sepera;*/
+					border-bottom: 2px solid black;
+					td:first-child { @include column(4); }
+					td:last-child { @include column(2); }
+					th:first-child { @include column(4); }
+					th:last-child { @include column(2); }
+				}
+			}
+		}
 	}
 }
 
